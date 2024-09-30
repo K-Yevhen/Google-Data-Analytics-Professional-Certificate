@@ -81,48 +81,157 @@ Skills you'll gain:
 
 - Developing a portfolio
 
-
-
-
-
-
-
 ------------------------
 
 Course 3:Prepare Data for Exploration
 
+What you'll learn:
 
+- Explain what factors to consider when making decisions about data collection.
 
+- Discuss the difference between biased and unbiased data.
+
+- Describe databases with references to their functions and components.
+
+- Describe best practices for organizing data.
+
+Skills you'll gain:
+
+- Decision-Making
+
+- Spreadsheet
+
+- Data Analysis
+
+- Problem Solving
+
+- Questioning
 
 ------------------------
 
 Course 4: Process Data from Dirty to Clean
 
+What you'll learn :
 
+- Define different types of data integrity and identify risks to data integrity.
 
+- Apply basic SQL functions to clean string variables in a database.
+
+- Develop basic SQL queries for use on databases.
+
+- Describe the process of verifying data cleaning results.
+
+Skills you'll gain:
+
+- Data Analysis
+
+- R Markdown
+
+- Data Visualization
+
+- R Programming
+
+- Rstudio
 
 ------------------------
 
 Course 5: Analyze Data to Answer Questions
 
+What you'll learn :
 
+- Discuss the importance of organizing your data before analysis by using sorts and filters.
 
+- Convert and format data.
 
+- Apply the use of functions and syntax to create SQL queries to combine data from multiple database tables.
+
+- Describe the use of functions to conduct basic calculations on data in spreadsheets.
+
+Skills you'll gain:
+
+- Data Aggregation
+
+- Spreadsheet
+
+- Data Analysis
+
+- Data Calculations
+
+- SQL
 
 ------------------------
 
 Course 6: Share Data Through the Art of Visualization
 
+What you'll learn :
 
+- Describe the use of data visualizations to talk about data and the results of data analysis.
 
+- Identify Tableau as a data visualization tool and understand its uses.
+
+- Explain what data driven stories are including reference to their importance and their attributes.
+
+- Explain principles and practices associated with effective presentations.
+
+Skills you'll gain:
+
+- Data Collection
+
+- Spreadsheet
+
+- Metadata
+
+- SQL
+
+- Data Ethics
 
 ------------------------
 
 Course 7: Data Analysis with R Programming
 
+What you'll learn :
 
+- Describe the R programming language and its programming environment.
 
+- Explain the fundamental concepts associated with programming in R including functions, variables, data types, pipes, and vectors.
+
+- Describe the options for generating visualizations in R.
+
+- Demonstrate an understanding of the basic formatting in R Markdown to create structure and emphasize content.
+
+Skills you'll gain:
+
+- Data Analysis
+
+- Tableau Software
+
+- Data Visualization
+
+- Presentation
 
 ------------------------
 
 Course 8: Google Data Analytics Capstone: Complete a Case Study
+
+What you'll learn :
+
+- Identify the key features and attributes of a completed case study.
+
+- Apply the practices and procedures associated with the data analysis process to a given set of data.
+
+- Discuss the use of case studies/portfolios when communicating with recruiters and potential employers. 
+
+- Gain a competitive edge by learning AI skills from Google experts.
+
+Skills you'll gain:
+
+- Spreadsheet
+
+- Data Analysis 
+
+- SQL 
+
+- Data Visualization
+
+- Data Cleansing
+
