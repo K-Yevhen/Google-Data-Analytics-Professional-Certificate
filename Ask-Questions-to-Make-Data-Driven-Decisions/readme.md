@@ -39,7 +39,6 @@ Module 3:
 - Spreadsheets are a key data analytics tool. Here you’ll learn both why and how data analysts use spreadsheets in their work. You’ll also investigate how structured thinking helps analysts understand problems and come up with solutions.
 - 9 videos, 10 readings, 9 practice quizzes
 
-
 Module 4:
 - Always remember the stakeholder
 - Successful data analysts balance the needs and expectations of their team and the stakeholders they support. In this part of the course, you’ll learn strategies for managing stakeholder expectations while establishing clear communication with your team.
