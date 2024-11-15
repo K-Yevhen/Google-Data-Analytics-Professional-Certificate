@@ -1,0 +1,540 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <repository-location id='DashboardsStarterTemplate' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='animation'>
+      <format attr='animation-on' value='ao-off' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='World_Bank_CO2' inline='true' name='federated.1csebbg00kug441gxrxfd09dh1ok' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='World_Bank_CO2' name='excel-direct.0jbv9ni0c2iq5a13f6cda0tgho50'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/yevhenkuts/PycharmProjects/New/Google-Data-Analytics-Professional-Certificate/Share-Data-Through-the-Art-of-Visualization/Module-3/0uFcjnqGSxCSVfp6jHiuAQ_677f4957e313444394f4ccefd391c3e1_CO2-Dataset.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='excel-direct.0jbv9ni0c2iq5a13f6cda0tgho50' name='CO2 Data Cleaned' table='[&apos;CO2 Data Cleaned$&apos;]' type='table'>
+          <columns gridOrigin='A1:F10001:no:A1:F2147483647:0' header='yes' outcome='2'>
+            <column datatype='string' name='Country Code' ordinal='0' />
+            <column datatype='string' name='Country Name' ordinal='1' />
+            <column datatype='string' name='Region' ordinal='2' />
+            <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='3' />
+            <column datatype='real' name='CO2 (kt)' ordinal='4' />
+            <column datatype='real' name='CO2 Per Capita (metric tons)' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>2</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:F10001:no:A1:F2147483647:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Code</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country Code]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>Country Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Country Name]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>Country Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RAU_S2' />
+            <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2 (kt)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2 (kt)]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>CO2 (kt)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CO2 Per Capita (metric tons)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[CO2 Per Capita (metric tons)]</local-name>
+            <parent-name>[CO2 Data Cleaned]</parent-name>
+            <remote-alias>CO2 Per Capita (metric tons)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='CO2 Data Cleaned' datatype='table' name='[__tableau_internal_object_id__].[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]' role='measure' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/tableau-temp/#TableauTemp_0gzbu4u1culzat118jw3e1y9r4ur.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='11/15/2024 02:13:22 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Country Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country Code</remote-alias>
+              <ordinal>0</ordinal>
+              <family>CO2 Data Cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>229</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RAU_S2' />
+              <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Country Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Country Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Country Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>CO2 Data Cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>229</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RAU_S2' />
+              <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Region</remote-alias>
+              <ordinal>2</ordinal>
+              <family>CO2 Data Cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RAU_S2' />
+              <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>CO2 Data Cleaned</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>52</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CO2 (kt)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CO2 (kt)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CO2 (kt)</remote-alias>
+              <ordinal>4</ordinal>
+              <family>CO2 Data Cleaned</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2609</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CO2 Per Capita (metric tons)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[CO2 Per Capita (metric tons)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CO2 Per Capita (metric tons)</remote-alias>
+              <ordinal>5</ordinal>
+              <family>CO2 Data Cleaned</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9574</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='CO2 Data Cleaned' id='CO2 Data Cleaned_281DC1633F7F4514A72443FD3916CC95'>
+            <properties context=''>
+              <relation connection='excel-direct.0jbv9ni0c2iq5a13f6cda0tgho50' name='CO2 Data Cleaned' table='[&apos;CO2 Data Cleaned$&apos;]' type='table'>
+                <columns gridOrigin='A1:F10001:no:A1:F2147483647:0' header='yes' outcome='2'>
+                  <column datatype='string' name='Country Code' ordinal='0' />
+                  <column datatype='string' name='Country Name' ordinal='1' />
+                  <column datatype='string' name='Region' ordinal='2' />
+                  <column datatype='date' date-parse-format='yyyy' name='Year' ordinal='3' />
+                  <column datatype='real' name='CO2 (kt)' ordinal='4' />
+                  <column datatype='real' name='CO2 Per Capita (metric tons)' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average CO2 Per Capita</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='Sheet1' path='/workbooks/DashboardsStarterTemplate' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='World_Bank_CO2' name='federated.1csebbg00kug441gxrxfd09dh1ok' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1csebbg00kug441gxrxfd09dh1ok'>
+            <column datatype='real' name='[CO2 Per Capita (metric tons)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column-instance column='[CO2 Per Capita (metric tons)]' derivation='Avg' name='[avg:CO2 Per Capita (metric tons):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' center='4.0' field='[federated.1csebbg00kug441gxrxfd09dh1ok].[avg:CO2 Per Capita (metric tons):qk]' max='54.423340738480753' min='0.031805323557692305' palette='red_green_diverging_10_0' reverse='true' symmetric='false' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1csebbg00kug441gxrxfd09dh1ok].[avg:CO2 Per Capita (metric tons):qk]' />
+              <lod column='[federated.1csebbg00kug441gxrxfd09dh1ok].[none:Country Name:nk]' />
+              <size column='[federated.1csebbg00kug441gxrxfd09dh1ok].[avg:CO2 Per Capita (metric tons):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#000000' />
+                <format attr='mark-transparency' value='203' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1csebbg00kug441gxrxfd09dh1ok].[Latitude (generated)]</rows>
+        <cols>[federated.1csebbg00kug441gxrxfd09dh1ok].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{BB6DA877-74C8-4FCB-AEE4-5E41FBF9396D}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>CO2 Production by Region</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <repository-location id='Sheet2' path='/workbooks/DashboardsStarterTemplate' revision='' />
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='World_Bank_CO2' name='federated.1csebbg00kug441gxrxfd09dh1ok' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1csebbg00kug441gxrxfd09dh1ok'>
+            <column datatype='real' name='[CO2 (kt)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Year]' role='dimension' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CO2 (kt)]' derivation='Sum' name='[sum:CO2 (kt):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Year]' derivation='Year-Trunc' name='[tyr:Year:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1csebbg00kug441gxrxfd09dh1ok].[none:Region:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1csebbg00kug441gxrxfd09dh1ok].[sum:CO2 (kt):qk]</rows>
+        <cols>[federated.1csebbg00kug441gxrxfd09dh1ok].[tyr:Year:qk]</cols>
+      </table>
+      <simple-id uuid='{302F2216-04C8-4A8C-8E40-0851EC14D32F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97920' id='7' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1040'>
+            <zone h='97920' id='5' type-v2='layout-basic' w='72923' x='1231' y='1040'>
+              <zone h='48960' id='3' name='Sheet 1' w='72923' x='1231' y='1040'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='48960' id='10' name='Sheet 2' w='72923' x='1231' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97920' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='24615' x='74154' y='1040'>
+              <zone h='18985' id='8' name='Sheet 1' pane-specification-id='0' param='[federated.1csebbg00kug441gxrxfd09dh1ok].[avg:CO2 Per Capita (metric tons):qk]' type-v2='size' w='24615' x='74154' y='1040'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8452' id='9' name='Sheet 1' pane-specification-id='0' param='[federated.1csebbg00kug441gxrxfd09dh1ok].[avg:CO2 Per Capita (metric tons):qk]' type-v2='color' w='24615' x='74154' y='20025'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='2861' id='11' name='Sheet 2' pane-specification-id='0' param='[federated.1csebbg00kug441gxrxfd09dh1ok].[none:Region:nk]' type-v2='color' w='24615' x='74154' y='28477'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{597E7A87-A789-4E20-9ACE-0FF0A4BDB4D8}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1csebbg00kug441gxrxfd09dh1ok].[avg:CO2 Per Capita (metric tons):qk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1csebbg00kug441gxrxfd09dh1ok].[avg:CO2 Per Capita (metric tons):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{27E8CD91-BBE4-479A-BDDA-3C7DDD96D549}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1csebbg00kug441gxrxfd09dh1ok].[none:Region:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AE8D0345-E146-4152-AFD1-B4FF144F1F86}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <simple-id uuid='{AD082059-F419-4086-8E63-477580E70062}' />
+    </window>
+  </windows>
+</workbook>
