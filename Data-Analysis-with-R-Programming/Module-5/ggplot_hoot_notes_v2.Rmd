@@ -1,0 +1,49 @@
+---
+title: "Palmerpenguins Data Viz"
+author: "Yevhen"
+date: "2024-11-28"
+output: html_document
+---
+
+
+### Setting up my environment 
+Notes: setting up my R environment by loading the 'tidyverse' and 'palmerpenguins, 'DT' packages
+
+```{r ggplot for penguin data}
+library(ggplot2)
+library(palmerpenguins)
+library(DT)
+```
+### Importing a small part of data
+
+```{r data exploring}
+data(penguins)
+datatable(penguins)
+```
+
+### Visualisations
+Here we will go through a serious of visualisations 
+
+#### Flipper and body mass in purple 
+Here, we plot flipper length against body mass 
+
+```{r visualise flipper and body mass in purple}
+ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +  geom_point(color="purple")
+```
+
+#### Flipper and body mass by species
+Here, we plot flipper length against body mass and look at the breakdown by species
+
+```{r visualise flipper and body mass by species}
+ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) + 
+  geom_point(aes(shape=species))
+```
+
+#### Flipper and body mass by species and sex
+Here, we plot flipper length against body mass and look at the breakdown by species
+
+```{r species and sex}
+ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +   geom_point(aes(color=species,
+  shape=species)) +
+    facet_wrap(~sex)
+```
